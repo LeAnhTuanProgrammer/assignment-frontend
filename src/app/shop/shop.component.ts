@@ -8,20 +8,22 @@ import { Product } from '../Product';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent implements OnInit {
-product: Product;
+ 
   constructor(
-    private route: ActivatedRoute,
     private productService: ProductService
-  ) { }
-
-  ngOnInit() {
-    this.getProduct();
+  ) { 
+    console.log('constructor')
   }
-
-  getProduct(){
-    this.route.params.subscribe(param => {
-      
-        this.productService.getProduct(param.productID).subscribe(data => this.product = data);
-    })
+   selected: Product;
+  product: Product[];
+  ngOnInit(): void {
+    this.getProducts();
+  }
+ 
+  getProducts(){
+   this.productService.getProducts().subscribe(data => {
+     console.log(data);
+     this.product = data;
+    });
   }
 }
