@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
     console.log('constructor')
   }
    selected: Product;
-  product: Product[];
+  products: Product[];
   ngOnInit(): void {
     this.getProducts();
   }
@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   getProducts(){
    this.productService.getProducts().subscribe(data => {
      console.log(data);
-     this.product = data;
+     this.products = data;
     });
   }
 }

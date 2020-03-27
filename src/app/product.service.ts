@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class ProductService {
  api = 'https://5e7e2ae3fa19eb001651a733.mockapi.io/product';
-  product = data;
+  products = data;
   constructor(
     private http: HttpClient
     ) { }
@@ -29,7 +29,7 @@ export class ProductService {
     return this.http.post<Product>(`${this.api}`, product);
     // const newProduct = { id: 5, ...product};
     // this.products.push(newProduct);
-     console.log(this.product)
+     console.log(this.products)
   }
   updateProduct(product){
      return this.http.put<Product>(`${this.api}/${product.id}`, product);

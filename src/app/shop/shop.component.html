@@ -1,5 +1,5 @@
 
-                <div *ngFor="let product of product" >
+              
             <div class="breadcrumb-area ptb-60 ptb-sm-30">
                             <div class="container">
                                 <div class="breadcrumb">
@@ -11,7 +11,7 @@
                             </div>
                             <!-- Container End -->
                         </div>
-                           <div class="col-lg-9 order-lg-2">
+                          
                         <!-- Grid & List View Start -->
                         <div class="grid-list-top fix mb-10">
                              <!-- Toolbar Short Area Start -->
@@ -40,8 +40,8 @@
                                 <div id="grid-view" class="tab-pane active">
                                     <div class="row">
                                         <!-- Single Product Start -->                    
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div class="single-product">
+                                        <div class="col-lg-4 col-sm-6" *ngFor="let product of products">
+                                            <div class="single-product" >
                                                 <!-- Product Image Start -->
                                                 <div class="kiosk-product-img">
                                                     <a href="product.html">
@@ -102,7 +102,7 @@
                                         <!-- Single Product End -->                
                                     
                                 <!-- #grid view End -->
-                                <div id="list-view" class="tab-pane">
+                                <div id="list-view" class="tab-pane" *ngFor="let product of products">
                                     <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
@@ -219,5 +219,5 @@
                 </div>          
             </div>
         </div>
-                           </div>
+
                
