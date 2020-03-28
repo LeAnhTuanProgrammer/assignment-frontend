@@ -1,0 +1,13 @@
+<h2>Hiển thị chi tiết</h2><br><br>
+ <div *ngIf="product">
+   <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+  <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">{{product.name}}</a>
+        </h4>
+        <h5>${{product.price}}</h5>
+        <p class="card-text">{{product.desc}}</p>
+
+      </div>
+      
+ </div>
