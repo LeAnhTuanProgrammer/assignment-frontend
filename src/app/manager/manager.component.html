@@ -1,6 +1,8 @@
 <br>
-<h4>Danh sách quản lý Sản Phẩm</h4>
+<h4>
+Product list management</h4>
 <br>
+
  <td><button class="btn btn-primary" routerLink="/news" routerLinkActive="active">Add new</button></td>
   <table class="table">
     <thead>
@@ -23,9 +25,10 @@
      
          <td><img [src]="product.img" width="200px"></td>
        
-        <td><button class="btn btn-primary" routerLink="/product/{{product.id}}">Chitiết</button></td>
-        <td><button class="btn btn-primary" routerLink="/product/edit/{{product.id}}" >Sửa</button></td>
-          <td> <button   class="btn btn-primary" (click)="removeItem(product.id)">Xóa</button></td>
+        <td><button class="btn btn-primary" routerLink="/product/{{product.id}}">
+Detail</button></td>
+        <td><button class="btn btn-primary" routerLink="/product/edit/{{product.id}}" >Update</button></td>
+          <td> <button   class="btn btn-primary" (click)="removeItem(product.id)">Delete</button></td>
       </tr>
       
     </tbody>

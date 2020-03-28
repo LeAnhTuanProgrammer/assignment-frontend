@@ -41,10 +41,10 @@
                                     <div class="row">
                                         <!-- Single Product Start -->                    
                                         <div class="col-lg-4 col-sm-6" *ngFor="let product of products">
-                                            <div class="single-product" >
+                                            <div routerLink="/product/{{product.id}}" >
                                                 <!-- Product Image Start -->
                                                 <div class="kiosk-product-img">
-                                                    <a href="product.html">
+                                                    <a routerLink="/product/{{product.id}}">
                                                         <img class="first-img" [src]="product.img" alt="single-product">
                                                         <img class="second-img" [src]="product.img" alt="single-product">
                                                     </a>
@@ -53,12 +53,10 @@
                                                 <!-- Product Content Start -->
                                                 <div class="kiosk-product-content">
                                                     <p><span class="price">${{product.price}}</span></p>                               
-                                                    <h4><a href="product.html">{{product.name}}</a></h4>
+                                                    <h4><a routerLink="/product/edit/{{product.id}}">{{product.name}}</a></h4>
                                                     <div class="kiosk-product-action">
-                                                        <div class="kiosk-action-content">
-                                                            <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                                            <a href="cart.html" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                                            <a href="product.html" data-toggle="tooltip" title="Product Details"><i class="fa fa-link"></i></a>
+                                                        <div class="kiosk-action-content"> 
+                                                            <a routerLink="/product/{{product.id}}" data-toggle="tooltip" title="Product Details"><i class="fa fa-link"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -107,7 +105,7 @@
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="kiosk-product-img">
-                                            <a href="product.html">
+                                            <a routerLink="/product/{{product.id}}">
                                                 <img class="first-img" [src]="product.img" alt="single-product">
                                                 <img class="second-img" [src]="product.img" alt="single-product">
                                             </a>
@@ -115,14 +113,13 @@
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
                                         <div class="kiosk-product-content">           
-                                            <h4><a href="product.html">{{product.name}}</a></h4>
+                                            <h4><a routerLink="/product/{{product.id}}">{{product.name}}</a></h4>
                                             <p><span class="price">${{product.price}}</span></p>
                                             <p>{{product.desc}}</p>
                                             <div class="kiosk-product-action">
                                                 <div class="kiosk-action-content">
-                                                    <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                                    <a href="cart.html" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                                    <a href="product.html" data-toggle="tooltip" title="Product Details"><i class="fa fa-link"></i></a>
+                                                 
+                                                    <a routerLink="/product/{{product.id}}" data-toggle="tooltip" title="Product Details"><i class="fa fa-link"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -133,7 +130,7 @@
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="kiosk-product-img">
-                                            <a href="product.html">
+                                            <a routerLink="/product/{{product.id}}">
                                                 <img class="first-img" [src]="product.img" alt="single-product">
                                                 <img class="second-img" [src]="product.img" alt="single-product">
                                             </a>
@@ -141,14 +138,13 @@
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
                                         <div class="kiosk-product-content">            
-                                            <h4><a href="product.html">{{product.name}}</a></h4>
+                                            <h4><a routerLink="/product/{{product.id}}">{{product.name}}</a></h4>
                                             <p><span class="price">${{product.price}}</span><del class="prev-price">${{product.price}}</del></p>
                                             <p>{{product.desc}}</p>
                                             <div class="kiosk-product-action">
                                                 <div class="kiosk-action-content">
-                                                    <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                                    <a href="cart.html" data-toggle="tooltip" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                                    <a href="product.html" data-toggle="tooltip" title="Product Details"><i class="fa fa-link"></i></a>
+                                                   
+                                                    <a routerLink="/product/{{product.id}}" data-toggle="tooltip" title="Product Details"><i class="fa fa-link"></i></a>
                                                 </div>
                                             </div>
                                         </div>
