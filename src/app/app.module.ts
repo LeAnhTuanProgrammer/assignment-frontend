@@ -9,9 +9,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ShopComponent } from './shop/shop.component';
 import { ManagerComponent } from './manager/manager.component';
-import { ProductAddComponent } from './product-add/product-add.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductAddComponent } from './product-add/product-add.component';
+
+
 
 
 @NgModule({

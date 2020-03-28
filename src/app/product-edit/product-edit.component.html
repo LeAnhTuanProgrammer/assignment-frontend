@@ -1,14 +1,22 @@
 
   <h4>Product Repair</h4>
-  <div  *ngIf="product" >
-  <div class="kiosk-product-thumb" >
-  
+  <div class="col-md-6"  >
+ 
+  <div *ngIf="product">
     <label for=""></label>
-    <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="product.name">
-    <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
-    <input type="text" name="desc" class="form-control"placeholder="Desc" [(ngModel)]="product.desc">
-    <input type="text" name="img" class="form-control"placeholder="Img" [(ngModel)]="product.img">
-  </div>
+     <input type="text" name="name" placeholder=" Name" [(ngModel)]="product.name"> <br> <br>
+    <input type="text" name="price" placeholder="Price" [(ngModel)]="product.price"> <br> <br>
+    <input type="text" name="desc" placeholder="Desc" [(ngModel)]="product.desc">
+    
+    <input type="text" name="img" placeholder="Img" [(ngModel)]="product.img"> <br>
+ <br>
+  
   <button type="submit" class="btn btn-primary" (click)="updateProduct()">Update</button>
-
+  </div>
 </div>
+
+
+   
+       
+           
+ 
