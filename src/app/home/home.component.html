@@ -5,7 +5,7 @@
             <div class="slider-wrapper theme-default">
                 <!-- Slider Background  Image Start-->
                 <div id="slider" class="nivoSlider">
-                    <a href="shop.html"> <img src="https://i.imgur.com/4ohyefQh.jpg" data-thumb="img/slider/1.jpg" alt="" title="#slider-1-caption1"></a>
+                    <a href="shop.html"> <img src="https://i.imgur.com/4ohyefQh.jpg" alt="" title="#slider-1-caption1"></a>
                    
                 </div>
                 <!-- Slider Background  Image Start-->
@@ -174,7 +174,7 @@
                                     <!-- New Products Activation Start -->
                                     <div class="kiosk-collection owl-carousel">
                                        <!-- Single Product Start -->
-                                        <div class="single-product">
+                                        <div class="single-product" *ngFor="let product of products">
                                             <!-- Product Image Start -->
                                             <div class="kiosk-product-img">
                                                 <a href="product.html">
