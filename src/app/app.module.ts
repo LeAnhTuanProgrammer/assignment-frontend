@@ -8,11 +8,13 @@ import { HelloComponent } from './hello.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ShopComponent } from './shop/shop.component';
+import { ManagerComponent } from './manager/manager.component';
+import { ProductAddComponent } from './product-add/product-add.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ShopComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ShopComponent, ManagerComponent, ProductAddComponent ],
   bootstrap:    [ AppComponent ],
    providers: [ProductService]
 })
