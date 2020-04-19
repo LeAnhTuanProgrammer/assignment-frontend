@@ -13,8 +13,6 @@ import { LoginComponent } from './login/login.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-
-   
  {path:'home',component:HomeComponent},
   {path:'shop',component:ShopComponent},
  {path:'about',component:AboutComponent},
