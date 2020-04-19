@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
  {path:'home',component:HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
  {path:'about',component:AboutComponent},
   {path:'login',component:LoginComponent},
   {path:'cart',component:CartComponent},
+   {path:'checkout',component:CheckoutComponent},
   {path:'admin',component:AdminComponent,
   children:[
   { path: '', redirectTo: 'dashboard', pathMatch: 'full'},

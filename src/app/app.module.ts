@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -25,7 +26,7 @@ import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ShopComponent, ManagerComponent, ProductAddComponent, ProductEditComponent, ProductDetailComponent, AdminComponent, DashboardComponent, AboutComponent, LoginComponent, LoginAdminComponent, CartComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ShopComponent, ManagerComponent, ProductAddComponent, ProductEditComponent, ProductDetailComponent, AdminComponent, DashboardComponent, AboutComponent, LoginComponent, LoginAdminComponent, CartComponent, CheckoutComponent ],
   bootstrap:    [ AppComponent ],
    providers: [ProductService]
 })
