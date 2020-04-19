@@ -1793,7 +1793,6 @@ body {
     color: #666666;
 }
 
-@import url('../../../css.css');
 .img {
     max-width: 100%;
     -webkit-transition: all 0.3s ease-out 0s;
