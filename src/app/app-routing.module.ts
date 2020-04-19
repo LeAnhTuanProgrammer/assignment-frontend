@@ -11,12 +11,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
+import { CartComponent } from './cart/cart.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
  {path:'home',component:HomeComponent},
   {path:'shop',component:ShopComponent},
  {path:'about',component:AboutComponent},
   {path:'login',component:LoginComponent},
+  {path:'cart',component:CartComponent},
   {path:'admin',component:AdminComponent,
   children:[
   { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
