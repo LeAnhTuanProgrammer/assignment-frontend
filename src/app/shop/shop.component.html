@@ -44,7 +44,7 @@
                         </div>
                         <!-- Primary Vertical-Menu End -->
                         <!-- Search Box Start -->
-                        <div class="col-xl-6 col-lg-7 d-none d-lg-block">
+                       <div class="col-xl-6 col-lg-7 d-none d-lg-block">
                             <div class="kiosk-middle-menu pull-right">
                                 <nav>
                                     <ul class="kiosk-middle-menu-list">
@@ -64,18 +64,15 @@
                                             <!-- Home Version Dropdown End -->
                                         </li>                                        
                                         
-                                        <li><a href="#">pages</a>
-                                            <!-- Home Version Dropdown Start -->
-                                            <ul class="kiosk-dropdown">
-                                                <!-- <li><a href="contact.html">contact us</a></li>  -->
-                                                <!-- <li><a href="about.html">about us</a></li>    -->
-                                                <li><a href="login.html">Login Page</a></li>
-                                                <li><a href="error.html">404 Page</a></li>
-                                            </ul>
+                                        <li><a href="/">News</a>
+                                         
                                             <!-- Home Version Dropdown End -->
                                         </li>
                                         <li><a href="about.html">About</a></li>  
-                                        <!-- <li><a href="contact.html">contact us</a></li>                                         -->
+                                        <!-- <li><a href="contact.html">contact us</a></li> 
+                                                                                -->
+                                                                                <li><a href="/">Login</a></li>  
+                                                                                <li><a href="/">Logout</a></li>  
                                     </ul>
                                 </nav>
                             </div>
@@ -108,12 +105,7 @@
                                 </div>
                             </div>
                             <!-- Toolbar Short Area End -->
-                            <div class="grid-list-view f-right">
-                                <ul class="list-inline nav">
-                                    <li><a data-toggle="tab" href="#grid-view"><i class="fa fa-th"></i></a></li>
-                                    <li><a data-toggle="tab" href="#list-view"><i class="fa fa-list-ul"></i></a></li>
-                                </ul>
-                            </div>
+                          
                         </div>
                         <!-- Grid & List View End -->
                         <div class="main-categorie product-area">
@@ -182,74 +174,7 @@
                                         <!-- Single Product End -->                
                                     
                                 <!-- #grid view End -->
-                                <div id="list-view" class="tab-pane" *ngFor="let product of products">
-                                    <!-- Single Product Start -->
-                                    <div class="single-product">
-                                        <!-- Product Image Start -->
-                                        <div class="kiosk-product-img">
-                                            <a routerLink="/product/{{product.id}}">
-                                                <img class="first-img" [src]="product.img" alt="single-product">
-                                                <img class="second-img" [src]="product.img" alt="single-product">
-                                            </a>
-                                        </div>
-                                        <!-- Product Image End -->
-                                        <!-- Product Content Start -->
-                                        <div class="kiosk-product-content">           
-                                            <h4><a routerLink="/product/{{product.id}}">{{product.name}}</a></h4>
-                                            <p><span class="price">${{product.price}}</span></p>
-                                            <p>{{product.desc}}</p>
-                                            <div class="kiosk-product-action">
-                                                <div class="kiosk-action-content">
-                                                 
-                                                    <a routerLink="/product/{{product.id}}" data-toggle="tooltip" title="Product Details"><i class="fa fa-link"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Product Content End -->
-                                    </div>
-                                    <!-- Single Product Start -->
-                                    <!-- Single Product Start -->
-                                    <div class="single-product">
-                                        <!-- Product Image Start -->
-                                        <div class="kiosk-product-img">
-                                            <a routerLink="/product/{{product.id}}">
-                                                <img class="first-img" [src]="product.img" alt="single-product">
-                                                <img class="second-img" [src]="product.img" alt="single-product">
-                                            </a>
-                                        </div>
-                                        <!-- Product Image End -->
-                                        <!-- Product Content Start -->
-                                        <div class="kiosk-product-content">            
-                                            <h4><a routerLink="/product/{{product.id}}">{{product.name}}</a></h4>
-                                            <p><span class="price">${{product.price}}</span><del class="prev-price">${{product.price}}</del></p>
-                                            <p>{{product.desc}}</p>
-                                            <div class="kiosk-product-action">
-                                                <div class="kiosk-action-content">
-                                                   
-                                                    <a routerLink="/product/{{product.id}}" data-toggle="tooltip" title="Product Details"><i class="fa fa-link"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Product Content End -->
-                                    </div>
-                                    <!-- Single Product Start -->
-                                    <!-- Single Product Start -->
-                              
-                                   
-                                    <!-- Single Product Start -->
-                                    <!-- Single Product Start -->
-                                   
-                                    <!-- Single Product Start -->
-                                    <!-- Single Product Start -->
-                                   
-                                    <!-- Single Product Start -->
-                                    <!-- Single Product Start -->
-                                    
-                                    <!-- Single Product Start -->
-                                    <!-- Single Product Start -->
-                                   
-                                        <!-- Product Content End -->
-                                    </div>                                  
+                                                        
                                 </div>
                                 <!-- #list view End -->
                             </div>
@@ -288,7 +213,7 @@
                             </div>
                             <div class="kiosk-subscribe">
                                 <form action="#">
-                                    <input class="subscribe" placeholder="Enter your email address" name="email" id="subscribe" type="text">
+                                    <input class="subscribe" placeholder="Enter your email address" name="email" id="subscribe" type="text" w>
                                     <button type="submit" class="submit">subscribe</button>
                                 </form>
                             </div>
