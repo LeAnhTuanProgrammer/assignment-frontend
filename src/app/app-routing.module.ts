@@ -10,6 +10,7 @@ import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
+import { LoginAdminComponent } from './login-admin/login-admin.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
 
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path:'manager',component:ManagerComponent},
   {path:'product/edit/:productID',component:ProductEditComponent},
   {path:'product/:productID',component:ProductDetailComponent},
-  {path:'news',component:ProductAddComponent}
+  {path:'news',component:ProductAddComponent},
+  {path:'loginad',component:LoginAdminComponent}
 ]
 }
 
