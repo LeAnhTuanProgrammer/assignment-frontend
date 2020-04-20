@@ -27,6 +27,7 @@ import { AboutadComponent } from './aboutad/aboutad.component';
 
 
 
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, HomeComponent, ShopComponent, ManagerComponent, ProductAddComponent, ProductEditComponent, ProductDetailComponent, AdminComponent, DashboardComponent, AboutComponent, LoginComponent, LoginAdminComponent, CartComponent, CheckoutComponent, NewsComponent, ManagerNewsComponent, AboutadComponent ],

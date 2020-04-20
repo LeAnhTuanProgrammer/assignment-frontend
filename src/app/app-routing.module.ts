@@ -16,6 +16,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { NewsComponent } from './news/news.component';
 import { ManagerNewsComponent } from './manager-news/manager-news.component';
 import { AboutadComponent } from './aboutad/aboutad.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   {path:'home',component:HomeComponent},
