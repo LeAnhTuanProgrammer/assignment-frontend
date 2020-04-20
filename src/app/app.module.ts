@@ -19,6 +19,7 @@ import { LoginComponent } from './login/login.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { NewsComponent } from './news/news.component';
 
 
 
@@ -26,7 +27,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ShopComponent, ManagerComponent, ProductAddComponent, ProductEditComponent, ProductDetailComponent, AdminComponent, DashboardComponent, AboutComponent, LoginComponent, LoginAdminComponent, CartComponent, CheckoutComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ShopComponent, ManagerComponent, ProductAddComponent, ProductEditComponent, ProductDetailComponent, AdminComponent, DashboardComponent, AboutComponent, LoginComponent, LoginAdminComponent, CartComponent, CheckoutComponent, NewsComponent ],
   bootstrap:    [ AppComponent ],
    providers: [ProductService]
 })

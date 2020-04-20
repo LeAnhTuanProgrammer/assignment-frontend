@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { NewsComponent } from './news/news.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
  {path:'home',component:HomeComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'cart',component:CartComponent},
    {path:'checkout',component:CheckoutComponent},
+    {path:'information',component:NewsComponent},
   {path:'admin',component:AdminComponent,
   children:[
   { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
