@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { ProductService } from './product.service';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -29,7 +31,7 @@ import { AboutadComponent } from './aboutad/aboutad.component';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ,NgbModule ],
   declarations: [ AppComponent, HelloComponent, HomeComponent, ShopComponent, ManagerComponent, ProductAddComponent, ProductEditComponent, ProductDetailComponent, AdminComponent, DashboardComponent, AboutComponent, LoginComponent, LoginAdminComponent, CartComponent, CheckoutComponent, NewsComponent, ManagerNewsComponent, AboutadComponent ],
   bootstrap:    [ AppComponent ],
    providers: [ProductService]
