@@ -14,20 +14,22 @@ import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { NewsComponent } from './news/news.component';
+import { ManagerNewsComponent } from './manager-news/manager-news.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
- {path:'home',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:'shop',component:ShopComponent},
- {path:'about',component:AboutComponent},
+  {path:'about',component:AboutComponent},
   {path:'login',component:LoginComponent},
   {path:'cart',component:CartComponent},
-   {path:'checkout',component:CheckoutComponent},
-    {path:'information',component:NewsComponent},
+  {path:'checkout',component:CheckoutComponent},
+  {path:'information',component:NewsComponent},
   {path:'admin',component:AdminComponent,
   children:[
   { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path:'dashboard',component:DashboardComponent},
   {path:'manager',component:ManagerComponent},
+  {path:'manager_new',component:ManagerNewsComponent},
   {path:'product/edit/:productID',component:ProductEditComponent},
   {path:'product/:productID',component:ProductDetailComponent},
   {path:'news',component:ProductAddComponent},
