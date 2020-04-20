@@ -1673,7 +1673,6 @@
 
     display: block;
     box-sizing: border-box;
-
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -1792,6 +1791,7 @@ body {
     font-size: 14px;
     color: #666666;
 }
+
 
 .img {
     max-width: 100%;
@@ -3469,6 +3469,7 @@ input[type="text"]#email-two::-webkit-input-placeholder {
         Extra class
 *************************/
 
+.pricing .container .row [class*="col-"] {}
 
 /*Custom cloumn*/
 
@@ -3685,7 +3686,7 @@ input[type="text"]#email-two::-webkit-input-placeholder {
 
 /*-- Tab --*/
 
-
+.product-tab-content {}
 
 .product-tab-content .tab-pane {
     display: block;
@@ -5175,7 +5176,7 @@ p.checkout-coupon input[type="submit"] {
   right: 0;
   text-align: right;
   text-transform: uppercase;
- 
+  float: right;
 }
 
 .submit-comment .comment {
@@ -5616,7 +5617,7 @@ p.checkout-coupon input[type="submit"] {
     box-shadow: none;
     color: #fff;
     display: inline-block;
-   
+    float: left;
     font-size: 12px;
     font-weight: 500;
     height: 40px;
